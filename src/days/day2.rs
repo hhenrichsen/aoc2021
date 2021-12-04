@@ -1,5 +1,5 @@
 /// parses commands into deltas
-pub fn prep_day2(command: &&str) -> (i32, i32) {
+pub fn prep_day2(command: &str) -> (i32, i32) {
     // Pull direction and count from the command
     if let [dir, raw_count] = command.split_whitespace().into_iter().collect::<Vec<&str>>()[..] {
         let count: i32 = raw_count.parse::<i32>().expect(raw_count);
